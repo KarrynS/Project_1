@@ -10,8 +10,10 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="assets/css/hero-style.css">
+    <link rel="stylesheet" href="assets/css/side-bar.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
+  <body>
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
@@ -25,10 +27,31 @@
             </ul>
           </li>
           <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
+          <li><button type="button" class="clear button secondary" data-toggle="offCanvasNestedOverlap">Recent Searches</button></li>
         </ul>
       </div>
     </div>
+  <!--sidebar-->
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas position-left off-canvas-absolute" id="offCanvasNestedOverlap" data-off-canvas data-transition="overlap">
+
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+          
+      <!--Recent searches content will go here-->
+      <ul id="side-bar-ul" class="menu vertical">Recent Searches</ul>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+        <li id="side-bar-li"><a href="#" target="_blank"></a></li>
+      </div>
 
     <header class="hero-search-filter">
       <div class="hero-search-filter-content">
@@ -52,9 +75,11 @@
     </header>
     
     <div class="grid-x" style="height: 500px;">
-      <div class="cell small-2" style="background: red;">Sidebar</div>
-      <div class="cell small-10" style="background: lightblue;">Main</div>
+      <!--<div class="cell small-2" style="background: red;">Sidebar</div>-->
+      <div class="cell small-12" style="background: lightblue;">Main</div>
     </div>
+
+  </div>
     
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
