@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="assets/css/hero-style.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Site Title</li>
-          <li>
-            <a href="#">One</a>
-            <ul class="menu vertical">
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
+    type='text/css'>
 
-    <header class="hero-search-filter">
-      <div class="hero-search-filter-content">
-        <!-- <img class="hero-search-filter-logo" src="https://placehold.it/160x80" alt="" /> -->
-        <h1 style="color: white">Search to get started</h1>
-        <form class="hero-search-filter-form" action="">
-          <label for="findtext">Find</label>
-          <input id="findtext" class="hero-search-filter-form-find" type="text" />
-          <div class="divider">&nbsp;</div>
-          <label for="findlocate">Near</label>
-          <input id="findlocate" class="hero-search-filter-form-near" type="text" />
-          <button class="button"><i class="fa fa-search"></i></button>
-        </form>
-        <ul class="hero-search-filter-menu menu align-center">
-          <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Restaurants</a></li>
-          <li><a href="#"><i class="fa fa-glass" aria-hidden="true"></i> Nightlife</a></li>
-          <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Home Services</a></li>
-          <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Delivery</a></li>
-        </ul>
-      </div>
-    </header>
-    
-    <div class="grid-x" style="height: 500px;">
-      <div class="cell small-2" style="background: red;">Sidebar</div>
-      <div class="cell small-10" style="background: lightblue;">Main</div>
+  <link rel="stylesheet" href="assets/css/hero-style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Site Title</li>
+        <li>
+          <a href="#">One</a>
+          <ul class="menu vertical">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+  </div>
+
+  <header class="hero-search-filter">
+    <div class="hero-search-filter-content">
+      <!-- <img class="hero-search-filter-logo" src="https://placehold.it/160x80" alt="" /> -->
+      <h1 style="color: white">Search to get started</h1>
+      <form class="hero-search-filter-form" action="">
+        <label for="findtext">Find</label>
+        <input id="findtext" class="hero-search-filter-form-find" type="text" />
+        <div class="divider">&nbsp;</div>
+        <label for="findlocate">Near</label>
+        <input id="findlocate" class="hero-search-filter-form-near" type="text" />
+        <button class="button"><i class="fa fa-search"></i></button>
+      </form>
+      <ul class="hero-search-filter-menu menu align-center">
+        <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Restaurants</a></li>
+        <li><a href="#"><i class="fa fa-glass" aria-hidden="true"></i> Nightlife</a></li>
+        <li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Home Services</a></li>
+        <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Delivery</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="grid-x" style="height: 500px;">
+    <div class="cell small-2" style="background: red;">Sidebar</div>
+    <div class="cell small-10" style="background: lightblue;">Main</div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+
 </html>
