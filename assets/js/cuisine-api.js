@@ -11,10 +11,10 @@ $("#searchButton").on("click", function(e) {
       headers: {
         "user-key": "cc4feb66d0d2aefeb3be88d334f570b7"
       }
-    }
+    };
 
     $.ajax(settings).done(function(response) {
       console.log(response);
-    })
+    });
   });
-})
+});
