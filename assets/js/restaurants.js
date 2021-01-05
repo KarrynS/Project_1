@@ -1,3 +1,20 @@
+var urlParams = new URLSearchParams(window.location.search);
+var cuisineID = urlParams.get('id');
+var lat = urlParams.get('lat');
+var lon = urlParams.get('lon');
+var range = urlParams.get('range');
+
+// get the restaurants from the url params
+// getRestaurants(lat, lon, cuisineId, radius, cb)
+getRestaurants(lat, lon, cuisineID, range, function(response) {
+  // console.log(response)
+  response.forEach(function(restaurant) {
+    var restaurant = restaurant.restaurant;
+    console.log(restaurant)
+    createListing(restaurant);
+  })
+})
+
 // Set the body to a variable
 var body = document.body;
 
@@ -12,6 +29,7 @@ function createListing(restaurant) {
   var rating = document.createElement("div");
   var cost = document.createElement("div");
   var image = document.createElement("img");
+  image.src = restaurant.thumb;
 
   // Append all of our elements
   body.appendChild(overallBanner);
@@ -23,9 +41,9 @@ function createListing(restaurant) {
   picture.appendChild(image);
 
   // Set the text content of relevant elements
-  resName.textContent = "Restaurant Name";
-  picture.textContent = "Image";
-  rating.textContent = "Rating";
+  resName.textContent = restaurant.name;
+  // picture.textContent = "Image";
+  rating.textContent = restaurant.user_rating.aggregate_rating;
   cost.textContent = "Cost";
 
   // Set classes for elements
