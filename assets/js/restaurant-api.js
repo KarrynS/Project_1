@@ -10,7 +10,7 @@ function getRestaurants(lat, lon, cuisineId, radius, cb) {
   }
 
   $.ajax(settings).done(function(response) {
-    console.log(response.restaurants);
+    // console.log(response.restaurants);
     if (cb) cb(response.restaurants);
   })
 }
