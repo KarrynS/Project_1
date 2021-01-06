@@ -1,5 +1,6 @@
 var restId = "16577492";
 
+//Establishing AJAX call for Restaurant Details
 function restaurantDetails() {
     var settings = {
       async: true,
@@ -13,9 +14,6 @@ function restaurantDetails() {
   
     $.ajax(settings).done(function(response) {
         console.log(response);
-      console.log(response.menu_url);
-      console.log(response.photos_url);
-      console.log(response.all_reviews);
 
     //Adding restaurant name
     var restName = response.name;
@@ -32,21 +30,13 @@ function restaurantDetails() {
     //Adding phone 
     var restPhone = response.phone_numbers
     $("#phone").text(restPhone);
-
-    //Adding menu -- **not working properly**
-    var restMenu = response.menu_url;
-    $("#menu").append("<img src='"+ restMenu +"'>");
     
-    //Adding photos -- **not working properly**
-    var restPhotos = response.photos_url;
-    restPhotos.forEach(function() {
-        $("#photo-small").append("<img src'"+ restPhotos +"'>");
-    })
-
-    //Adding reviews
+    //Adding photos
+    var restPhotos = response.featured_image;
+    $("#photo-header").attr("src", restPhotos);
     
     })
   };
 restaurantDetails();
 
-//https://www.zomato.com/melbourne/chin-chin-3-cbd/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop
+
