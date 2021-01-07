@@ -38,8 +38,11 @@ function restaurantDetails() {
     //Adding photos
     var restPhotos = response.featured_image;
     $("#photo-header").attr("src", restPhotos);
-    
+    if (restPhotos === "") {
+      $("#photo-header").attr("src", "assets/img/no-image.jpg")
+    }
     })
+
   };
 restaurantDetails();
 
