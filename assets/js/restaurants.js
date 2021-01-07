@@ -21,6 +21,9 @@ var body = document.body;
 function createListing(restaurant) {
   // Create all necessary elements
   var overallBanner = document.createElement("div");
+  overallBanner.addEventListener("click", function() {
+    window.location.href = `resdetailpage.html?id=${restaurant.id}`;
+  })
 
   // For each restaurant you need:
   var restaurantBanner = document.createElement("div");
