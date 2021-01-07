@@ -3,11 +3,11 @@
 
 var cuisineList = $("#cuisine-list");
 
-function createCardForCuisine(cuisineType) {
+function createCardForCuisine(cuisineType, cuisineID) {
   var cell = $("<div class='cell'>");
   var card = $("<div class='card'>");
-  var img = $("<img class='data-name' alt='header' />");
-  img.attr('src', 'https://placehold.it/350x300')
+  var img = $("<img class='data-name' alt='cuisine-image' />");
+  img.attr('src', `https://b.zmtcdn.com/data/images/cuisines/unlabelled_v2_1/${cuisineID}.jpg`)
   var cardInfo = $("<div class='card-info'>");
   var cuisineHeader = $("<h1>").text(cuisineType); 
   
@@ -34,10 +34,10 @@ $("#searchButton").on("click", function(e) {
     $.ajax(settings).done(function(response) {
       cuisineList.empty();
       response.cuisines.forEach(function(cuisine) {
-        console.log(cuisine);
+        //console.log(cuisine.cuisine.cuisine_name);
         var cuisineType = cuisine.cuisine.cuisine_name;
-        createCardForCuisine(cuisineType);
-      
+        var cuisineID = cuisine.cuisine.cuisine_id;
+        createCardForCuisine(cuisineType, cuisineID);
       })
     });
   });
