@@ -1,4 +1,7 @@
-var restId = "16577492";
+var urlParams = new URLSearchParams(window.location.search);
+var restId = urlParams.get('id');
+
+//var restId = "16577492";
 
 //Establishing AJAX call for restaurant reviews
 function restaurantReviews() {
@@ -13,7 +16,7 @@ function restaurantReviews() {
     };
     
     $.ajax(settings).done(function(response) {
-        
+        console.log(response.user_reviews)
         //Appending reviews to HTML
         var userReviews = response.user_reviews;
 
