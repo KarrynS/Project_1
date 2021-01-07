@@ -7,15 +7,8 @@ var cuisineList = $("#cuisine-list");
 
 function createCardForCuisine(cuisineType, cuisineID) {
   var cell = $("<div class='cell'>");
-  var card = $("<div class='card'>").on('click', () => {
-    console.log("object")
-    window.location.href = `Restaurants.html?id=${cuisineID}&lat=${urlParams.get("lat")}&lon=${urlParams.get("lon")}&range=5000`
-  });
+  var card = $("<div class='card'>").on('click', () => window.location.href = `Restaurants.html?id=${cuisineID}&lat=${urlParams.get("lat")}&lon=${urlParams.get("lon")}&range=5000`
   var img = $("<img class='data-name' alt='header' />");
-  // img.attr('src', 'https://placehold.it/350x300')
-  // var cardInfo = $("<div class='card-info'>");
-  // var card = $("<div class='card'>");
-  // var img = $("<img class='data-name' alt='image' />");
   img.attr('src', `https://b.zmtcdn.com/data/images/cuisines/unlabelled_v2_1/${cuisineID}.jpg`)
     var cardInfo = $("<div class='card-info'>");
   var cuisineHeader = $("<h1>").text(cuisineType); 
@@ -53,11 +46,8 @@ $("#searchButton").on("click", function(e) {
     };
 
     $.ajax(settings).done(function(response) {
-      console.log("response =", response);
       cuisineList.empty();
       response.cuisines.forEach(function(cuisine) {
-        console.log(cuisine.cuisine.cuisine_name);
-        console.log(cuisine.cuisine.cuisine_id);
         var cuisineType = cuisine.cuisine.cuisine_name;
         var cuisineID = cuisine.cuisine.cuisine_id;
         createCardForCuisine(cuisineType, cuisineID);
