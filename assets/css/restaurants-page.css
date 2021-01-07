@@ -1,0 +1,69 @@
+
+.flex-parent {
+  display: flex;
+  flex-direction:column;
+  width: 80%;
+  margin-top: 2%;
+  margin-left:auto;
+  margin-right: auto;
+  
+  padding: 0.5%;
+  background-color: lightblue;
+}
+
+.flex-parent.flex-child {
+  flex-direction:row;
+  background-color: lightgray;
+  justify-content: space-around;
+  border: none;
+  border-style: outset;
+
+}
+
+.flex-child {
+  min-height: auto;
+  min-width: 10%;
+  line-height: auto;
+  margin: 0.5%;
+  width: auto;
+  border: 1px solid #000;
+  background-color: gray;
+  color: white;
+  text-align:center;
+  flex-wrap: wrap;
+}
+
+.flex-child.picture {
+  flex: 4 auto;
+}
+
+.flex-child.name {
+  flex: 2 auto;
+}
+
+.flex-child.rating {
+  flex: 1 auto;
+}
+
+.flex-child.cost {
+  flex: 1 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .picture {
+    order: 1;
+  }
+  .name {
+    order: 2;
+  }
+  .rating {
+    order: 3;
+  }
+  .cost {
+    order: 4;
+  }
+}
+
+.hero-search-filter h1 {
+  color:aliceblue;
+}
