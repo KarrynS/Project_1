@@ -1,0 +1,23 @@
+#reviews {
+    margin: 10px;
+}
+
+.image-div {
+    float: left;
+    margin-right: 20px;
+}
+
+#review-img {
+    height: 200px;
+    margin: 10px;
+}
+.review-card {
+    clear: both;
+    margin-top: 50px;
+    height: 220px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+
