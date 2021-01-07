@@ -6,12 +6,12 @@ const urlParams = new URLSearchParams(window.location.search);
 var cuisineList = $("#cuisine-list");
 
 function createCardForCuisine(cuisineType, cuisineID) {
-  var cell = $("<div class='cell'>");
-  var card = $("<div class='card'>").on('click', () => window.location.href = `Restaurants.html?id=${cuisineID}&lat=${urlParams.get("lat")}&lon=${urlParams.get("lon")}&range=5000`);
+  var cell = $("<div class='cell clearfix'>");
+  var card = $("<div class='card clearfix'>").on('click', () => window.location.href = `Restaurants.html?id=${cuisineID}&lat=${urlParams.get("lat")}&lon=${urlParams.get("lon")}&range=5000`);
   var img = $("<img class='data-name' alt='header' />");
   img.attr('src', `https://b.zmtcdn.com/data/images/cuisines/unlabelled_v2_1/${cuisineID}.jpg`)
     var cardInfo = $("<div class='card-info'>");
-  var cuisineHeader = $("<h1>").text(cuisineType); 
+  var cuisineHeader = $("<h5>").text(cuisineType); 
   
   cardInfo.append(cuisineHeader);
   card.append(img);
