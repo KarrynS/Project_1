@@ -38,11 +38,6 @@ function restaurantDetails() {
     //Adding photos
     var restPhotos = response.featured_image;
     $("#photo-header").attr("src", restPhotos);
-
-    //Adding menu
-    var restMenu = response.menu_url;
-    $("#menu").attr("href",restMenu)
-    $("#menu").text("Restaurant Menu");
     
     })
   };
