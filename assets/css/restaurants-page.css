@@ -1,7 +1,7 @@
 
 .flex-parent {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   width: 80%;
   margin-top: 2%;
   margin-left:auto;
@@ -31,33 +31,25 @@
   color: white;
   text-align:center;
   flex-wrap: wrap;
-  display: flex;
-  align-content: center;
-  justify-content: center;
 }
 
 .flex-child.picture {
-  object-fit: cover;
-  height: 100%;
+  flex: 4 auto;
 }
 
 .flex-child.name {
-  flex: 2;
-  font-size: 2vw;
+  flex: 2 auto;
 }
 
 .flex-child.rating {
-  flex: 1;
-  font-size: 2vw;
+  flex: 1 auto;
 }
 
 .flex-child.cost {
-  flex: 1;
-  font-size: 2vw;
+  flex: 1 auto;
 }
 
 @media screen and (min-width: 768px) {
-
   .picture {
     order: 1;
   }
