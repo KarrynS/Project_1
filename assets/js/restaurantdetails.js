@@ -1,4 +1,8 @@
-var restId = "16577492";
+var urlParams = new URLSearchParams(window.location.search);
+var restId = urlParams.get('id');
+
+
+//var restId = "16577492"
 
 //Establishing AJAX call for Restaurant Details
 function restaurantDetails() {
