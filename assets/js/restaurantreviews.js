@@ -16,7 +16,7 @@ function restaurantReviews() {
     };
     
     $.ajax(settings).done(function(response) {
-        console.log(response.user_reviews)
+        
         //Appending reviews to HTML
         var userReviews = response.user_reviews;
 
@@ -32,9 +32,10 @@ function restaurantReviews() {
             divCard.append(divImg, divSection);
             $("#reviews").append(divCard);
             img.attr("src", response.user_reviews[i].review.user.profile_image);
+            
         }
     })
 };
 restaurantReviews();
 
-
+//assets/img/no-image.jpg
