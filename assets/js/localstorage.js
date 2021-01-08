@@ -31,3 +31,9 @@ function renderSearch() {
   }
 }
 renderSearch();
+
+//Adding Event Listener for previous searches
+$(document).on("click", ".prevCuisine", function () {
+  citySearch = $(this).attr("data-name");
+  renderSearch();
+});
