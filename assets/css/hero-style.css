@@ -1,5 +1,5 @@
 .hero-search-filter {
-  background: url("../img/cover.jpeg") center center no-repeat;
+  background: url("../img/cover.jpg") center center no-repeat;
   height: 40%;
   background-size: cover;
   display: -webkit-flex;
@@ -12,6 +12,11 @@
 
 .hero-search-filter-logo {
   margin-bottom: 2rem;
+}
+
+#searchButton {
+  color: white;
+  z-index: 2;
 }
 
 .hero-search-filter-content {

@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(77, 76, 76);
+    color: white;
+}
+
+#reviews {
+    margin: 10px;
+}
+
+.image-div {
+    float: left;
+    margin-right: 20px;
+}
+
+#review-img {
+    height: 200px;
+    margin: 10px;
+}
+.review-card {
+    clear: both;
+    margin-top: 50px;
+    height: 220px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+h4 {
+   margin: 10px; 
+}
+
+#menu {
+    margin: 10px;
+}
+
+.menu-card {
+    border: 1px solid grey;
+}
+
+.menu-course {
+   
+    width: auto;
+    color: white;
+    background-color: rgb(77, 76, 76);
+    font-size: 40px;
+}
+
+.menu-name {
+    color: white;
+}

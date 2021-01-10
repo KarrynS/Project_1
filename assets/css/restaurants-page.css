@@ -1,14 +1,18 @@
 
+html {
+  background-color: rgb(77, 76, 76);
+}
+
 .flex-parent {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin-top: 2%;
+  width: 100%;
+  margin-top: 0%;
   margin-left:auto;
   margin-right: auto;
   
   padding: 0.5%;
-  background-color: lightblue;
+  background-color: rgb(77, 76, 76);
 }
 
 .flex-parent.flex-child {
@@ -74,4 +78,8 @@
 
 .hero-search-filter h1 {
   color:aliceblue;
+}
+
+.resRow {
+  cursor: pointer;
 }
