@@ -1,8 +1,11 @@
 var urlParams = new URLSearchParams(window.location.search);
 var cuisineID = urlParams.get('id');
+var city = urlParams.get('city');
 var lat = urlParams.get('lat');
 var lon = urlParams.get('lon');
 var range = urlParams.get('range');
+
+$("#cityName").text(city);
 
 // get the restaurants from the url params
 // getRestaurants(lat, lon, cuisineId, radius, cb)
