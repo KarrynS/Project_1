@@ -83,3 +83,7 @@ html {
 .resRow {
   cursor: pointer;
 }
+
+#cityName {
+  text-transform: capitalize;
+}
