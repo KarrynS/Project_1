@@ -10,7 +10,7 @@ getRestaurants(lat, lon, cuisineID, range, function(response) {
   //console.log(response)
   response.forEach(function(restaurant) {
     var restaurant = restaurant.restaurant;
-    console.log(restaurant)
+    // console.log(restaurant)
     createListing(restaurant);
   })
 })
