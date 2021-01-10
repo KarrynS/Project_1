@@ -75,3 +75,7 @@
 .hero-search-filter h1 {
   color:aliceblue;
 }
+
+.resRow {
+  cursor: pointer;
+}
