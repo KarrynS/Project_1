@@ -1,14 +1,18 @@
 
+html {
+  background-color: rgb(77, 76, 76);
+}
+
 .flex-parent {
   display: flex;
-  flex-direction:column;
-  width: 80%;
-  margin-top: 2%;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0%;
   margin-left:auto;
   margin-right: auto;
   
   padding: 0.5%;
-  background-color: lightblue;
+  background-color: rgb(77, 76, 76);
 }
 
 .flex-parent.flex-child {
@@ -31,25 +35,33 @@
   color: white;
   text-align:center;
   flex-wrap: wrap;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .flex-child.picture {
-  flex: 4 auto;
+  object-fit: cover;
+  height: 100%;
 }
 
 .flex-child.name {
-  flex: 2 auto;
+  flex: 2;
+  font-size: 2vw;
 }
 
 .flex-child.rating {
-  flex: 1 auto;
+  flex: 1;
+  font-size: 2vw;
 }
 
 .flex-child.cost {
-  flex: 1 auto;
+  flex: 1;
+  font-size: 2vw;
 }
 
 @media screen and (min-width: 768px) {
+
   .picture {
     order: 1;
   }
@@ -66,4 +78,8 @@
 
 .hero-search-filter h1 {
   color:aliceblue;
+}
+
+.resRow {
+  cursor: pointer;
 }

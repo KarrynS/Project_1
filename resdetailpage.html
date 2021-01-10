@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="assets/css/hero-style.css">
     <link rel="stylesheet" href="assets/css/side-bar.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleresdetail.css">
   </head>
   <body>
      <!-- Start Top Bar -->
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Site Title</li>
+          <li class="menu-text">APPetite</li>
           <li><button type="button" class="clear button secondary" data-toggle="offCanvasNestedOverlap">Recent Searches</button></li>
         </ul>
       </div>
@@ -35,101 +36,50 @@
       <ul id="side-bar-ul" class="menu vertical">Recent Searches</ul>
     </div>
 
-    <header class="hero-search-filter">
+    <header class="hero-search-filter" id="restName">
       <div class="hero-search-filter-content">
-        <h1 style="color: white">* Restaurant Name * </h1>
+        <h1 style="color: white"> </h1>
       </div>
     </header>
     <br>
 
     <div class="row">
       <div class="medium-6 columns">
-        <img class="thumbnail" src="https://placehold.it/650x350">
-        <div class="row small-up-4">
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/250x200">
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/250x200">
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/250x200">
-          </div>
-          <div class="column">
-            <img class="thumbnail" src="https://placehold.it/250x200">
-          </div>
-        </div>
+        <img id="photo-header" class="thumbnail" src="https://placehold.it/650x350">
       </div>
       <div class="restaurant-info medium-6 large-5 columns">
         <h5>Opening Hours</h5>
-        <p class="hours">Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in.</p>
+        <p id="hours"></p>
         <hr>
         <h5>Address</h5>
-        <p class="address">123 My Street, Melbourne, VIC </p>
+        <p id="address"></p>
         <hr>
         <h5>Phone</h5>
-        <p class="phone" style="color:red;"> +01234456789</p>
+        <p id="phone" style="color:red;"></p>
       </div>
 
     <!--Menu-->
     <div class="row column">
       <hr>
       <h4>Menu</h4>
-      <div class="menu" id="menu">
-        <img class="thumbnail" src="https://placehold.it/200x200">
-      </div>
+      <a class="menu" id="menu"></a>
     </div>
-
+    <img src="" >
     <!--Reviews-->
     <div class="column row">
       <hr>
       <div class="reviews" id="reviews">
         <h4>Reviews</h4>
-        <div class="media-object stack-for-small">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/200x200">
-          </div>
-          <div class="media-object-section">
-            <h5>Mike Stevenson</h5>
-            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-          </div>
-        </div>
-        <div class="media-object stack-for-small">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/200x200">
-          </div>
-          <div class="media-object-section">
-            <h5>Mike Stevenson</h5>
-            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you</p>
-          </div>
-        </div>
-        <div class="media-object stack-for-small">
-          <div class="media-object-section">
-            <img class="thumbnail" src="https://placehold.it/200x200">
-          </div>
-          <div class="media-object-section">
-            <h5>Mike Stevenson</h5>
-            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you</p>
-          </div>
-        </div>
-        <label>
-          My Review
-          <textarea placeholder="None"></textarea>
-        </label>
-        <button class="button">Submit Review</button>
       </div>
     </div>
 
-    
-    
-    
- 
-    
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script src="./assets/js/localstorage.js"></script>
+    <!--script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script-->
+    <script src="./assets/js/restaurantdetails.js"></script>
+    <script src="./assets/js/restaurantmenu.js"></script>
+    <script src="./assets/js/restaurantreviews.js"></script>
     <script>
       $(document).foundation();
     </script>
