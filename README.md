@@ -12,6 +12,6 @@ https://karryns.github.io/Project_1/
 
 # ScreenShot
 
-<img src="./assets/img/ScreenShot.png">
 <img src="./assets/img/Screenshot2.png">
-<img src="./assets/img/ScreenShot3.png">
+<img src="./assets/img/Screenshot4.png">
+<img src="./assets/img/Screenshot3.png">
