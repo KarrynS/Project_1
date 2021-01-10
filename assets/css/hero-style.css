@@ -14,11 +14,6 @@
   margin-bottom: 2rem;
 }
 
-#searchButton {
-  color: white;
-  z-index: 2;
-}
-
 .hero-search-filter-content {
   display: -webkit-flex;
   display: -ms-flexbox;
