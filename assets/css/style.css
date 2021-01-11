@@ -1,0 +1,22 @@
+.card {
+    cursor: pointer;
+}
+
+.flex-child {
+    cursor: pointer;
+}
+
+#resth1, .subheader {
+    cursor: default;
+}
+
+#siteh1, #resth1, #restnameh1 {
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0 0 5px black, 0 0 15px darkslategray;
+    font-size: 60px;
+}
+
+.subheader {
+    text-shadow: 0 0 5px black, 0 0 15px darkslategray;
+}
