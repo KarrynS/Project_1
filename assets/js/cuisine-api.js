@@ -7,7 +7,7 @@ var cuisineList = $("#cuisine-list");
 
 function createCardForCuisine(cuisineType, cuisineID) {
   var cell = $("<div class='cell clearfix'>");
-  var card = $("<div class='card clearfix'>").on('click', () => window.location.href = `Restaurants.html?id=${cuisineID}&lat=${urlParams.get("lat")}&lon=${urlParams.get("lon")}&range=5000`);
+  var card = $("<div class='card clearfix'>").on('click', () => window.location.href = `Restaurants.html?id=${cuisineID}&city=${urlParams.get("city")}&lat=${urlParams.get("lat")}&lon=${urlParams.get("lon")}&range=5000`);
   var img = $("<img class='data-name' alt='header' />");
   img.attr('src', `https://b.zmtcdn.com/data/images/cuisines/unlabelled_v2_1/${cuisineID}.jpg`)
     var cardInfo = $("<div class='card-info'>");
@@ -32,6 +32,7 @@ function createCardForCuisine(cuisineType, cuisineID) {
 $("#searchButton").on("click", function(e) {
   getCoordsFromLocation($("#findtext").val().trim(), function(result) {
 
+    urlParams.set("city", $("#findtext").val().trim());
     urlParams.set("lat", result.lat);
     urlParams.set("lon", result.lon);
 
